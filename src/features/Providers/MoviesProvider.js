@@ -11,7 +11,7 @@ const MoviesProvider = ({children}) => {
     }
 
     const removeMovie = (movieTitle) => {
-        setMovies(movies.filter(movie => movie.title !== movieTitle));
+        setMovies(movies.filter(movie => movie.Title !== movieTitle));
         return movies;
     }
 

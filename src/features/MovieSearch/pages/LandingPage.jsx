@@ -1,9 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from "react";
-import axios from "axios";
 import styled from 'styled-components';
-import MovieModal from "../components/MovieModal/MovieModal";
 import MovieSearch from '../components/MovieSearch/MovieSearch';
+import MovieCard from "../components/MovieCard/MovieCard";
 
 const Container = styled.div`
   text-align: center;
@@ -20,14 +19,13 @@ const Container = styled.div`
 
 const LandingPage = () => {
   const [movie, setMovie] = useState("");
-  const [show, setShow] = useState(false);
 
   return (
     <Container>
       <h1>Welcome to my movie app!</h1>
       <MovieSearch setMovie={setMovie} />
       <div>
-        {movie && <MovieModal movie={movie} show={show} onClick={() => setShow(!show)} />}
+        {movie && <MovieCard movieData={movie} />}
       </div>
     </Container>
   );
