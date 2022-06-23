@@ -16,10 +16,16 @@ const SubmitButton = styled.button`
 
 const MovieSearch = ({ setMovie }) => {
   const [movieName, setMovieName] = useState("");
-  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiKey = '490bdc5c';
 
   const getMoviesByName = async (name) => {
     const url = `http://www.omdbapi.com/?apikey=${apiKey}&t=${name}`;
+    const response = await axios.get(url);
+    setMovie(response.data);
+  };
+
+  const getMoviesById = async (id) => {
+    const url = `http://www.omdbapi.com/?apikey=${apiKey}&i=${id}`;
     const response = await axios.get(url);
     setMovie(response.data);
   };

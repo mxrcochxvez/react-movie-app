@@ -22,7 +22,7 @@ const LandingPage = () => {
 
   return (
     <Container>
-      <h1>Welcome to my movie app!</h1>
+      <h1></h1>
       <MovieSearch setMovie={setMovie} />
       <div>
         {movie && <MovieCard movieData={movie} />}
