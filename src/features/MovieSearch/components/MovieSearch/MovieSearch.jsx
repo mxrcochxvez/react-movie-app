@@ -8,10 +8,12 @@ const SubmitButton = styled.button`
   color: white;
   padding: 10px;
   border-radius: 12px;
-
+  margin-left: 10px;
   &:hover {
     background-color: #054cda;
   }
+
+  
 `
 
 const MovieSearch = ({ setMovie }) => {
