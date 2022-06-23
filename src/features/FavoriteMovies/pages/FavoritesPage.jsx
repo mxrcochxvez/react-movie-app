@@ -1,4 +1,13 @@
 import { useMovies } from '../../Providers/MoviesProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../pages/Favoratespage.css'
+
+
+
+
+
+
+
 
 const FavoritesPage = () => {
     const { movies, removeMovie } = useMovies();
