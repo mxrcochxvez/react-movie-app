@@ -13,14 +13,17 @@ const Wrapper = styled.div`
     padding: 0;
     text-decoration: none;
     color: #ffffff;
-  
+    font-size: 20px
   }
 
   div {
     color: #ffffff;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    font-size:125%
+  
+  
   
   }
 a {
