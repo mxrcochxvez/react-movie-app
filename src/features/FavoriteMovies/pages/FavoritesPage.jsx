@@ -1,4 +1,8 @@
 import { useMovies } from '../../Providers/MoviesProvider';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../pages/Favoratespage.css'
+
+
 
 const FavoritesPage = () => {
     const { movies, removeMovie } = useMovies();
@@ -11,12 +15,13 @@ const FavoritesPage = () => {
                     <h2>{movie.Title}</h2>
                     <p>{movie.Year}</p>
                     <p>{movie.Actors}</p>
-                    <button
-                    onClick={() => removeMovie(movie.Title)}
+                    <button 
+                    onClick={() => removeMovie(movie.Title)} 
                     >Remove</button>
                 </div>
             ))}
         </div>
+        
     )
 }
 

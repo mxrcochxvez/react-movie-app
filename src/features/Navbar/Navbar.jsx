@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  background-color: #fcee9a;
+  background-color: #004999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,13 +11,33 @@ const Wrapper = styled.div`
   h1 {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px
   }
 
   div {
+    color: #ffffff;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    font-size:125%
+  
+  
+  
   }
+a {
+color:#ffff;
+text-decoration:none;
+
+
+}
+
+
+
+
+
+
 `;
 
 export default function Navbar() {
